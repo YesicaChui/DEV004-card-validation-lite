@@ -8,12 +8,12 @@
 </head>
 
 <body>
-  <input type="number" min="1000000000000" max="9999999999999" id="cardnumber"></input>
+  <input oninput="maximaLongitud()" type="number" min="1000000000000" max="9999999999999" id="cardnumber"></input>
   <button onclick="validate()">Validar</button>
   <div id="result">
     <!-- <p>La Tarjeta es Valida</p> -->
   </div>
- 
+
 </body>
 
 </html>
