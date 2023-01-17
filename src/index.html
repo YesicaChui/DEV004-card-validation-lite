@@ -4,29 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Tarjeta de crédito válida</title>
+  <script defer src="./index.js"></script>
 </head>
 
 <body>
-  <input id="cardnumber"></input>
+  <input type="number" min="1000000000000" max="9999999999999" id="cardnumber"></input>
   <button onclick="validate()">Validar</button>
-  <div id="result"></div>
-  <script lang="javascript">
-    function validate() {
-      const valid = isValid(document.getElementById("cardnumber").value)
-      if (valid) {
-        // Show success in div#result
-      }
-      else {
-        // Show error message in div#result
-      }
-      alert("dfxfg")
-    }
-
-    function isValid(creditCardNumber){
-      // is creditCardNumber valid?
-      return false
-    }
-  </script>
+  <div id="result">
+    <!-- <p>La Tarjeta es Valida</p> -->
+  </div>
+ 
 </body>
 
 </html>
