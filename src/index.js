@@ -6,7 +6,7 @@ function validate() {
   }
   else {
     divResult.innerHTML = `<p>La Tarjeta es Invalida</p>`
- }
+  }
 }
 function isValid(creditCardNumber) {
   let validador = false //variable validadora
@@ -27,7 +27,7 @@ function isValid(creditCardNumber) {
       //paso3 suma de digitos si son mayores iguales que 10
       if (arregloInvertidoNumero[i] >= 10) {//10,12,14,16,18
         let numeroCadena = arregloInvertidoNumero[i].toString() //"16"
-        arregloInvertidoNumero[i] = Number(numeroCadena[0])+Number(numeroCadena[1])
+        arregloInvertidoNumero[i] = Number(numeroCadena[0]) + Number(numeroCadena[1])
       }
     }
   }
@@ -44,9 +44,9 @@ function isValid(creditCardNumber) {
   return validador
 }
 //restringiendo como maximo 16 caracteres
-function maximaLongitud () {
+function maximaLongitud() {
   const inputCard = document.getElementById('cardnumber');
-  if (inputCard.value.length > 16){
+  if (inputCard.value.length > 16) {
     inputCard.value = inputCard.value.slice(0, 16);
-  }    
+  }
 }
